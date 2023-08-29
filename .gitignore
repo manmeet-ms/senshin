@@ -4,3 +4,4 @@ javascriptone
 lib
 lib64
 pyvenv.cfg
+.env
