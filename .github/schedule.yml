@@ -1,4 +1,4 @@
-name: Python script Cron
+name: Zonjin Discord 
 on:
   schedule:
     - cron: '*/45 10 * * *'
