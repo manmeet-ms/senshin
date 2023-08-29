@@ -20,7 +20,7 @@ client=discord.Client(intents=intent)
 async def on_ready():
     print(f'Logged in As {client.user}')
     try:
-        for _ in range(3):
+        for _ in range(1):
             await send_message()
     except Exception as e:
         print(e)
@@ -29,19 +29,7 @@ async def on_ready():
 
 
 quotes =[
-"""Are you using Pomodoros?""", 
-"""Eat the Frog 🐸; Conquer the struggling tasks like a pro with the Eat the Frog strategy.""", 
-"""20 second rule; Just Ikk Vaari -  One step forward - Ikk vaari shuru kar k ta'an dekh technique (for 20 sec)""", 
-"""3 seconds rule; Defy procrastination by moving into action within 3 seconds. """, 
-"""Move before you're motivated (Count down to 3 sec Rule and START!)""", 
-"""Fly past the governer of 40%, the 40% potential barrier. Push that to 100% performance""", 
-"""Procrastination is the thief of time, your enemy. (Dominate it, before it takes charge on yourself)""", 
-"""Dream ↑  Efforts ↑ ( D ∝ E); As your dreams rise, let your efforts soar.""", 
-"""You must ACT! Indecision is the enemy; decisive action is the key.""",  
-"""Put ENERGY, Get RESULTS; Invest your energy, harvest incredible results.""", 
-"""Cut fkin' distractions; Achievement demands focus; eliminate distractions ruthlessly.""", 
-"""The harder the battle, the sweeter the victory.""", 
-"""FEAR is temporary, REGRET is permanent"""]
+"""Are you using Pomodoros?""", """Eat the Frog 🐸; Conquer the struggling tasks like a pro with the Eat the Frog strategy.""", """20 second rule; Just Ikk Vaari -  One step forward - Ikk vaari shuru kar k ta'an dekh technique (for 20 sec)""", """3 seconds rule; Defy procrastination by moving into action within 3 seconds. """, """Move before you're motivated (Count down to 3 sec Rule and START!)""", """Fly past the governer of 40%, the 40% potential barrier. Push that to 100% performance""", """Procrastination is the thief of time, your enemy. (Dominate it, before it takes charge on yourself)""", """Dream ↑  Efforts ↑ ( D ∝ E); As your dreams rise, let your efforts soar.""", """You must ACT! Indecision is the enemy; decisive action is the key.""",  """Put ENERGY, Get RESULTS; Invest your energy, harvest incredible results.""", """Cut fkin' distractions; Achievement demands focus; eliminate distractions ruthlessly.""", """The harder the battle, the sweeter the victory.""", """FEAR is temporary, REGRET is permanent"""]
 
 
 async def send_message():
