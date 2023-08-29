@@ -31,7 +31,7 @@ async def on_ready():
 quotes =[
 """Are you using Pomodoros?""", 
 """Eat the Frog 🐸; Conquer the struggling tasks like a pro with the Eat the Frog strategy.""", 
-"""20 second rule; Ikk vaari -  One step forward - Ikk vaari shuru kar k ta'an dekh technique (for 20 sec)""", 
+"""20 second rule; Just Ikk Vaari -  One step forward - Ikk vaari shuru kar k ta'an dekh technique (for 20 sec)""", 
 """3 seconds rule; Defy procrastination by moving into action within 3 seconds. """, 
 """Move before you're motivated (Count down to 3 sec Rule and START!)""", 
 """Fly past the governer of 40%, the 40% potential barrier. Push that to 100% performance""", 
@@ -51,11 +51,11 @@ async def send_message():
     channel_id=1145785026894639205 #quote-notifs
     channel = client.get_channel(channel_id)
     choice = randint(0, len(embed_colors)-1)
+
+    # commented one is with footer
     # embedtry=discord.Embed(description=f"{quotes[randint(0, len(quotes)-1)]} @{mention}", footer=f"Color selected: {embed_colors[choice]}", color=embed_colors[choice])
     embedtry=discord.Embed(description=f"{quotes[randint(0, len(quotes)-1)]} {mention}", color=embed_colors[choice])
     await channel.send(embed=embedtry)
 
 client.run(DISCORD_TOKEN)
 print("Success!")
-
-
