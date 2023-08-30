@@ -1,4 +1,4 @@
-name: Zonjin Discord 
+name: Senshin - A Study Comrade 
 on:
   schedule:
     - cron: '*/45 11 * * 1-5'
