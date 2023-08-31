@@ -33,7 +33,7 @@ async function Pomodoro(quoString) {
     await sleep(5000);
 }
 
-if (Time >= "16:00:00" || Time <= "22:00:00") {
+if (Time >= "16:00:00" && Time <= "22:00:00") {
 
     choice = Math.floor(Math.random() * (quotes.length) + 1); // 0-9
     const element = quotes[choice];
