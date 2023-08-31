@@ -28,7 +28,7 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 async function Pomodoro(quoString) {
-    sendNotif(quoString)
+    // sendNotif(quoString)
     console.log(quoString)
     await sleep(5000);
 }
