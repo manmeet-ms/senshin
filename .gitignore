@@ -1,8 +1,5 @@
-archived/bin
-archived/include
-archived/javascriptone
 lib
 lib64
 pyvenv.cfg
 .env
-archived/index.py
+archived/
