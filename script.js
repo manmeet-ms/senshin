@@ -29,7 +29,7 @@ const updateQuoteAndNotify = () => {
 };
 
 if (Notification.permission === "granted") {
-    if (Time >= "16:00:00" && Time <= "22:00:00") {
+    // if (Time >= "16:00:00" && Time <= "22:00:00") {
     setInterval(updateQuoteAndNotify, pomodoroInterval);
-    }
+    // }
 }
