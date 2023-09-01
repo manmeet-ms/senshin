@@ -1,3 +1,6 @@
+let btn=document.querySelector('button')
+
+
 console.log("Script is working.");
 // alert("Script is working.");
 // alert("Script worked.");
@@ -23,12 +26,12 @@ let sendNotif = (quoReceived) => {
 
 let TimeModule = new Date();
 // let Time = `${TimeModule.getHours()}:${TimeModule.getMinutes()}:${TimeModule.getSeconds()}`
-Time = "18:00:00"
+Time = "16:00:00"
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 async function Pomodoro(quoString) {
-    // sendNotif(quoString)
+    sendNotif(quoString)
     console.log(quoString)
     await sleep(5000);
 }
@@ -45,7 +48,3 @@ if (Time >= "16:00:00" && Time <= "22:00:00") {
 }
 
 // alert("Script worked.");
-
-
-
-
