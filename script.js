@@ -28,7 +28,7 @@ const pomodoroInterval = 0.25 * 60 * 1000; // 45 minutes in milliseconds
 const updateQuoteAndNotify = () => {
     const quoString = getRandomQuote();
     let a = document.getElementById("quotebox");
-    a.innerHTML = "quoString";
+    a.innerHTML = quoString;
     console.log(quoString);
     sendNotif(quoString);
 };
