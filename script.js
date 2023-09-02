@@ -24,14 +24,14 @@ const getRandomQuote = () => {
     return quotes[choice];
 };
 
-const pomodoroInterval = 45 * 60* 1000; // in seconds
+const pomodoroInterval = 1* 1000; // in seconds
 
 const updateQuoteAndNotify = () => {
     const quoString = getRandomQuote();
     let a = document.getElementById("quotebox");
     a.innerHTML = quoString;
     console.log(quoString);
-    // sendNotif(quoString);
+    sendNotif(quoString);
 };
 
 if (Notification.permission === "granted") {
