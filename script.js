@@ -11,7 +11,7 @@ const quotes = [
 "⏲️ 3, 2, 1 rule Kill procrastination by moving into action within 3 seconds.", 
 "🚀 Move before you crave for any motivation", 
 "0% Motivation 100% Discipline", 
-"Sugoi! That was just your 40% Push past the 40% potential barrier. Your brain got governors push that to 100% performance", 
+"Sugoi! Push past the 40% potential governors barrier.", 
 "Procrastination steals your Time; seize it back with dominance. Procrastination is the thief of Time, your enemy. (Dominate it, before it takes charge on yourself)", 
 "☘️ Dream ↑  Efforts ↑ ( D ∝ E) As your dreams rise, let your efforts soar.", 
 "You must ACT!  Indecision is the enemy; decisive action is the key.", 
@@ -44,7 +44,7 @@ const getRandomQuote = () => {
     return quotes[choice];
 };
 
-const pomodoroInterval = 5.75 * 60 * 1000; // in minutes
+const pomodoroInterval = 0.05 * 60 * 1000; // in minutes
 
 const updateQuoteAndNotify = () => {
     const quoString = getRandomQuote();
