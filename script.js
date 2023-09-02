@@ -27,7 +27,7 @@ const getRandomQuote = () => {
     return quotes[choice];
 };
 
-const pomodoroInterval = 2 * 60 * 1000; // in seconds
+const pomodoroInterval = 0.1 * 60 * 1000; // in seconds
 
 const updateQuoteAndNotify = () => {
     const quoString = getRandomQuote();
